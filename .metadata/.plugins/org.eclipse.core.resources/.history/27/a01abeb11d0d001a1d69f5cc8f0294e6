@@ -1,0 +1,10 @@
+package basic.dayone;
+
+
+public class Bike 
+{
+	private int bikeId;
+	private String bikeModel;
+	private int bikeMilage;
+	private double bikePrice;
+}
