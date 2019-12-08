@@ -55,8 +55,12 @@
         
         <!-- <mapping class="frameworks.hibernate.Sasikala.Tabs"/> -->
         
-        <mapping class="frameworks.hibernate.Sasikala.mapping.Laptop"/>
-        <mapping class="frameworks.hibernate.Sasikala.mapping.Person"/>
+        <!-- <mapping class="frameworks.hibernate.Sasikala.mapping.Laptop"/>
+        <mapping class="frameworks.hibernate.Sasikala.mapping.Person"/> -->
+        
+        <mapping class="frameworks.hibernate.Sasikala.inheritance.HRM"/>
+        <mapping class="frameworks.hibernate.Sasikala.inheritance.Cab"/>
+        <mapping class="frameworks.hibernate.Sasikala.inheritance.Project"/>
 
     </session-factory>
 
