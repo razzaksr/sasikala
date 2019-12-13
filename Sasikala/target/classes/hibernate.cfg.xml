@@ -49,7 +49,7 @@
         <property name="show_sql">true</property>
 
         <!-- Drop and re-create the database schema on startup -->
-        <property name="hbm2ddl.auto">create</property>
+        <property name="hbm2ddl.auto">update</property>
         <!-- create = drop the schema which comprises data and also table
         update = not gonna drop just append all data along with exists table -->
         
@@ -58,9 +58,11 @@
         <!-- <mapping class="frameworks.hibernate.Sasikala.mapping.Laptop"/>
         <mapping class="frameworks.hibernate.Sasikala.mapping.Person"/> -->
         
-        <mapping class="frameworks.hibernate.Sasikala.inheritance.HRM"/>
+        <!-- <mapping class="frameworks.hibernate.Sasikala.inheritance.HRM"/>
         <mapping class="frameworks.hibernate.Sasikala.inheritance.Cab"/>
-        <mapping class="frameworks.hibernate.Sasikala.inheritance.Project"/>
+        <mapping class="frameworks.hibernate.Sasikala.inheritance.Project"/> -->
+        
+        <mapping class="frameworks.hibernate.Sasikala.crud.Projector"/>
 
     </session-factory>
 
