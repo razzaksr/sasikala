@@ -62,7 +62,8 @@
         <mapping class="frameworks.hibernate.Sasikala.inheritance.Cab"/>
         <mapping class="frameworks.hibernate.Sasikala.inheritance.Project"/> -->
         
-        <mapping class="frameworks.hibernate.Sasikala.crud.Projector"/>
+        <!-- <mapping class="frameworks.hibernate.Sasikala.crud.Projector"/> -->
+        <mapping class="frameworks.hibernate.Sasikala.hql.Projector"/>
 
     </session-factory>
 
