@@ -43,7 +43,12 @@
         <property name="dialect">org.hibernate.dialect.MySQLDialect</property>
 
         <!-- Disable the second-level cache  -->
-        <property name="cache.provider_class">org.hibernate.cache.NoCacheProvider</property>
+        <!-- <property name="cache.provider_class">org.hibernate.cache.NoCacheProvider</property> -->
+        
+        <property name="cache.use_second_level_cache">true</property>
+        <property name="cache.use_query_cache">true</property>
+        
+        <property name="cache.region.factory_class">org.hibernate.cache.ehcache.EhCacheRegionFactory</property>
 
         <!-- Echo all executed SQL to stdout -->
         <property name="show_sql">true</property>
@@ -63,9 +68,10 @@
         <mapping class="frameworks.hibernate.Sasikala.inheritance.Project"/> -->
         
         <!-- <mapping class="frameworks.hibernate.Sasikala.crud.Projector"/> -->
-        <!-- <mapping class="frameworks.hibernate.Sasikala.hql.Projector"/> -->
+        <mapping class="frameworks.hibernate.Sasikala.hql.Projector"/> 
         
         <mapping class="frameworks.hibernate.Sasikala.api.Seed"/>
+        <!-- <mapping class="frameworks.hibernate.Sasikala.cache.Projector"/> -->
 
     </session-factory>
 

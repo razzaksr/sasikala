@@ -19,10 +19,10 @@ public class RunNamedQuery
 		List<Integer> yet=q.list();
 		System.out.println(yet);
 		
-		q=session.getNamedNativeQuery("myOwnTwo");
+		/*q=session.getNamedNativeQuery("myOwnTwo");// hibernate 5.X required
 		List<Projector> all=q.list();
 		for(Projector p:all)
-		{System.out.println(p.getItem()+" "+p.getHours());}
+		{System.out.println(p.getItem()+" "+p.getHours());}*/
 		
 		session.getTransaction().commit();
 		session.close();

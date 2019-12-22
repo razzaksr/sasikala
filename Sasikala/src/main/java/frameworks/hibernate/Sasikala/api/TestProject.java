@@ -1,5 +1,6 @@
 package frameworks.hibernate.Sasikala.api;
 
+import java.util.Iterator;
 import java.util.List;
 
 import org.hibernate.Criteria;
@@ -27,12 +28,22 @@ public class TestProject
 		{System.out.println(temp);}*/
 		
 		System.out.println("Second output");
+		ProjectionList plist=Projections.projectionList();
+		plist.add(Projections.property("name"));
+		plist.add(Projections.property("duration"));
+		plist.add(Projections.property("type"));
 		criteria.add(Restrictions.between("price", 20,60)).
-		setProjection(Projections.projectionList().
-				add(Projections.property("name")).add(Projections.property("duration")));
+		setProjection(plist);
 		List<Object> many=criteria.list();
-		for(Object temp:many)
-		{System.out.println(temp);}
+		/*for(Object temp:many)
+		{System.out.println(temp);}*/
+		Iterator it=many.iterator();
+
+		while(it.hasNext())
+		{
+			Object ob[] = (Object[])it.next();
+			System.out.println(ob[0]+" "+ob[1]+" "+ob[2]);
+		}
 		
 		session.getTransaction().commit();
 		session.close();

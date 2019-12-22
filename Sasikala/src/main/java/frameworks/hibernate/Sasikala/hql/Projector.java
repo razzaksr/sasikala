@@ -1,5 +1,6 @@
 package frameworks.hibernate.Sasikala.hql;
 
+import javax.persistence.Cacheable;
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
@@ -9,11 +10,16 @@ import javax.persistence.NamedNativeQuery;
 import javax.persistence.NamedQuery;
 import javax.persistence.Table;
 
+import org.hibernate.annotations.Cache;
+import org.hibernate.annotations.CacheConcurrencyStrategy;
+
 @Entity
 @org.hibernate.annotations.Entity(selectBeforeUpdate=true)
+@Cache(usage=CacheConcurrencyStrategy.READ_WRITE,region="projector")
+@Cacheable
 @Table(name="visions")
-@NamedQuery(name="myOwnOne",query="select lumens from Projector")
-@NamedNativeQuery(name="myOwnTwo",query="select * from visions",resultClass=Projector.class)
+//@NamedQuery(name="myOwnOne",query="select lumens from Projector")
+//@NamedNativeQuery(name="myOwnTwo",query="select * from visions",resultClass=Projector.class)
 public class Projector 
 {
 	@Id @GeneratedValue(strategy=GenerationType.AUTO)
