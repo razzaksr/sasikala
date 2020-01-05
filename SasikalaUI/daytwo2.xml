@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xsi:schemaLocation="http://www.springframework.org/schema/beans
+http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+<bean name="dm1" class="spring.each.SasikalaUI.daytwo.Demands">
+<property name="issues">
+	<list>
+		<value>Water</value>
+		<value>Drainage</value>
+		<value>Mosquito</value>
+	</list>
+</property>
+</bean>
+
+<!-- <bean name="dm2" class="spring.each.SasikalaUI.daytwo.Demands" parent="dm1">
+<property name="wardNo" value="33"/>
+</bean>
+
+<bean name="dm3" class="spring.each.SasikalaUI.daytwo.Demands" parent="dm1">
+<property name="promisingDays" value="60"/>
+</bean>
+
+<bean name="dm4" class="spring.each.SasikalaUI.daytwo.Demands" parent="dm2">
+<property name="issues">
+<list>
+<value>Transport</value><value>Library</value>
+</list>
+</property>
+<property name="promisingDays" value="30"/>
+</bean>
+ -->
+<bean name="demandsOne" class="spring.each.SasikalaUI.daytwo.Demands" parent="dm1">
+<property name="wardNo" value="33"/>
+</bean>
+
+<bean name="demandsTwo" class="spring.each.SasikalaUI.daytwo.Demands" parent="demandsOne">
+<property name="promisingDays" value="60"/>
+</bean>
+
+<bean name="demandsThree" class="spring.each.SasikalaUI.daytwo.Demands" parent="demandsTwo">
+<property name="issues">
+<list>
+<value>Transport</value><value>Library</value>
+</list>
+</property>
+<property name="promisingDays" value="30"/>
+</bean>
+
+<bean name="corp" class="spring.each.SasikalaUI.daytwo.Corporation" autowire="byName">
+<property name="pinCode" value="636001"/>
+</bean>
+
+<bean class="spring.each.SasikalaUI.daytwo.PackPost"/>
+<bean class="spring.each.SasikalaUI.daytwo.PackContain"/>
+
+</beans>

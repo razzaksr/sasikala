@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xsi:schemaLocation="http://www.springframework.org/schema/beans
+http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+<bean name="zone" class="spring.each.SasikalaUI.daytwo.Zone" init-method="begin" destroy-method="end">
+<property name="parliment" value="RajaSekar"/>
+<property name="wards">
+	<list>
+		<ref bean="as5"/>
+		<ref bean="as6"/>
+		<bean class="spring.each.SasikalaUI.Assembly">
+<constructor-arg name="code" value="134"/>
+<constructor-arg name="period" value="3"/>
+<constructor-arg name="name" value="Velachery Corporation"/>
+<constructor-arg name="president" value="Kittu"/></bean>
+	</list>
+</property>
+</bean>
+
+<bean name="zone2" class="spring.each.SasikalaUI.daytwo.Zone" init-method="begin" destroy-method="end">
+<constructor-arg name="parliment" value="Vishnu"/>
+<constructor-arg name="wards">
+	<list>
+		<ref bean="as5"/>
+		<ref bean="as6"/>
+		<bean class="spring.each.SasikalaUI.Assembly">
+<constructor-arg name="code" value="134"/>
+<constructor-arg name="period" value="3"/>
+<constructor-arg name="name" value="Velachery Corporation"/>
+<constructor-arg name="president" value="Kittu"/></bean>
+	</list>
+	</constructor-arg>
+</bean>
+
+<bean name="dt1" class="spring.each.SasikalaUI.daytwo.District">
+<property name="dtName" value="Chennai"/>
+<property name="assembly1">
+<bean class="spring.each.SasikalaUI.Assembly">
+<constructor-arg name="code" value="134"/>
+<constructor-arg name="period" value="3"/>
+<constructor-arg name="name" value="Velachery Corporation"/>
+<constructor-arg name="president" value="Kittu"/>
+</bean>
+</property>
+<property name="assembly2" ref="as5"/><!-- Object injection -->
+</bean>
+
+<bean name="dt2" class="spring.each.SasikalaUI.daytwo.District">
+<constructor-arg index="0" value="Salem"/>
+<constructor-arg index="1" ref="as5"/>
+<constructor-arg index="2" ref="as6"/>
+</bean>
+
+<bean name="as5" class="spring.each.SasikalaUI.Assembly">
+<constructor-arg name="code" value="98"/>
+<constructor-arg name="period" value="2"/>
+<constructor-arg name="name" value="Tambaram Corporation"/>
+<constructor-arg name="president" value="Richard"/>
+</bean>
+
+<bean name="as6" class="spring.each.SasikalaUI.Assembly">
+<constructor-arg type="Integer" value="111"/>
+<constructor-arg type="Integer" value="6"/>
+<constructor-arg type="String" value="Sholignallur"/>
+<constructor-arg type="String" value="Janani"/>
+</bean>
+
+</beans>

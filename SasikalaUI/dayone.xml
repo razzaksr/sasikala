@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xsi:schemaLocation="http://www.springframework.org/schema/beans
+http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+<bean name="as1" class="spring.each.SasikalaUI.Assembly">
+<property name="code" value="04"/>
+<property name="period" value="2"/>
+<property name="name" value="Salem North"/>
+<property name="president" value="Mohamed"/>
+</bean>
+
+<bean name="as2" class="spring.each.SasikalaUI.Assembly">
+<property name="code" value="12"/>
+<property name="period" value="5"/>
+<property name="name" value="Salem East"/>
+<property name="president" value="Razak"/>
+</bean>
+
+<bean name="as3" class="spring.each.SasikalaUI.Assembly">
+<property name="code" value="33"/>
+<property name="period" value="3"/>
+<property name="name" value="Corporation"/>
+<property name="president" value="Sabari"/>
+</bean>
+
+<bean name="as4" class="spring.each.SasikalaUI.Assembly">
+<constructor-arg index="0" value="35"/>
+<constructor-arg index="1" value="3"/>
+<constructor-arg index="2" value="Adyar Corporation"/>
+<constructor-arg index="3" value="Muruganantham"/>
+</bean>
+
+<bean name="as5" class="spring.each.SasikalaUI.Assembly">
+<constructor-arg name="code" value="98"/>
+<constructor-arg name="period" value="2"/>
+<constructor-arg name="name" value="Tambaram Corporation"/>
+<constructor-arg name="president" value="Richard"/>
+</bean>
+
+<bean name="as6" class="spring.each.SasikalaUI.Assembly">
+<constructor-arg type="Integer" value="111"/>
+<constructor-arg type="Integer" value="6"/>
+<constructor-arg type="String" value="Sholignallur"/>
+<constructor-arg type="String" value="Janani"/>
+</bean>
+
+</beans>
