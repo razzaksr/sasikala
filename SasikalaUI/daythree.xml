@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xmlns:con="http://www.springframework.org/schema/context"
+xsi:schemaLocation="http://www.springframework.org/schema/beans
+http://www.springframework.org/schema/beans/spring-beans.xsd
+http://www.springframework.org/schema/context
+http://www.springframework.org/schema/context/spring-context.xsd">
+
+<bean name="h1" class="spring.each.SasikalaUI.daythree.HeadSet">
+<property name="model" value="${h1.set}"/>
+<property name="price" value="1500"/>
+<property name="feature" value="Bluetooth 4.0"/>
+</bean>
+
+<bean name="h2" class="spring.each.SasikalaUI.daythree.HeadSet">
+<property name="model" value="Sony WS-300"/>
+<property name="price" value="3000"/>
+<property name="feature" value="${h2.feat}"/>
+</bean>
+
+<bean name="h3" class="spring.each.SasikalaUI.daythree.HeadSet">
+<qualifier value="pointingone"/>
+<property name="model" value="LevelU200"/>
+<property name="price" value="1900"/>
+<property name="feature" value="Bluetooth 3.0"/>
+</bean>
+
+<bean name="h4" class="spring.each.SasikalaUI.daythree.HeadSet">
+<qualifier value="pointingtwo"/>
+<property name="model" value="JBL XS100"/>
+<property name="price" value="3400"/>
+<property name="feature" value="Bluetooth 5.0"/>
+</bean>
+
+<bean name="san" class="spring.each.SasikalaUI.daythree.Sangeetha">
+<property name="stock">
+<array>
+<ref bean="h1"/><ref bean="h2"/><ref bean="h3"/>
+</array>
+</property> 
+<!-- <property name="size" value="4"/> -->
+</bean>
+
+<bean name="emp" class="spring.each.SasikalaUI.daythree.Employee">
+<property name="staffs">
+<list>
+<value>Sasikala</value><value>Grace</value><value>Stalin</value>
+<value>Richard</value><value>Prakash</value><value>Sneha</value>
+<value>Sasikala</value><value>Manonmani</value>
+</list>
+</property>
+</bean>
+
+<bean class="org.springframework.beans.factory.config.PropertyPlaceholderConfigurer">
+<property name="locations" value="src/main/java/myown.properties"/>
+</bean>
+
+<!-- <bean name="sup" class="spring.each.SasikalaUI.daythree.Supreme">
+<property name="head1" ref="h3"/>
+<property name="head2" ref="h4"/>
+</bean> -->
+
+<con:component-scan base-package="spring.each.SasikalaUI.daythree"/>
+
+</beans>

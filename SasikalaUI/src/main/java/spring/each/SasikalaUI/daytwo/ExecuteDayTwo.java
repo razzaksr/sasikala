@@ -4,6 +4,7 @@ import org.springframework.beans.factory.BeanFactory;
 import org.springframework.beans.factory.xml.XmlBeanFactory;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
+import org.springframework.context.support.FileSystemXmlApplicationContext;
 import org.springframework.core.io.FileSystemResource;
 
 public class ExecuteDayTwo 
@@ -21,8 +22,8 @@ public class ExecuteDayTwo
 		z=(Zone)context.getBean("zone2");
 		System.out.println(z);
 		}*/
-		BeanFactory context=new XmlBeanFactory(new FileSystemResource("daytwo2.xml"));
-		//ApplicationContext context=new ClassPathXmlApplicationContext("src/main/resources/daytwo2");
+		//BeanFactory context=new XmlBeanFactory(new FileSystemResource("daytwo2.xml"));
+		ApplicationContext context=new FileSystemXmlApplicationContext("daytwo2.xml");
 		/*Demands d=(Demands)context.getBean("dm1");
 		System.out.println(d);
 		d=(Demands)context.getBean("dm2");
