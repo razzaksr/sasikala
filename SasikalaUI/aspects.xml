@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xmlns:con="http://www.springframework.org/schema/context"
+xmlns:pect="http://www.springframework.org/schema/aop"
+xsi:schemaLocation="http://www.springframework.org/schema/beans
+http://www.springframework.org/schema/beans/spring-beans.xsd
+http://www.springframework.org/schema/context
+http://www.springframework.org/schema/context/spring-context.xsd
+http://www.springframework.org/schema/aop
+http://www.springframework.org/schema/aop/spring-aop.xsd">
+
+<bean name="bottleA" class="spring.each.SasikalaUI.aop.WaterBottle">
+<property name="brand" value="Kinley"/>
+<property name="capacity" value="1000"/>
+<property name="price" value="20"/>
+</bean>
+
+<bean name="bottleB" class="spring.each.SasikalaUI.aop.WaterBottle">
+<property name="brand" value="Tata+"/>
+<property name="capacity" value="2000"/>
+<property name="price" value="38"/>
+</bean>
+
+<bean name="bottleC" class="spring.each.SasikalaUI.aop.WaterBottle">
+<property name="brand" value="AmmaWater"/>
+<property name="capacity" value="1000"/>
+<property name="price" value="10"/>
+</bean>
+
+<bean name="post1" class="spring.each.SasikalaUI.aop.Post">
+<property name="name" value="VAO"/><property name="eligibility" value="HSC"/>
+<property name="vacancy" value="135"/><property name="income" value="23800"/>
+</bean>
+
+<bean name="post2" class="spring.each.SasikalaUI.aop.Post">
+<property name="name" value="SubCollector"/><property name="eligibility" value="UG"/>
+<property name="vacancy" value="69"/><property name="income" value="72400"/>
+</bean>
+
+<bean class="spring.each.SasikalaUI.aop.Interacts"/>
+
+<pect:aspectj-autoproxy/>
+
+<con:component-scan base-package="spring.each.SasikalaUI.aop"/>
+
+</beans>
