@@ -13,8 +13,10 @@ public class ExecuteData
 		System.out.println("Status of insertion: "+obj.adding(new Watch("Apple hitech","iOS",true,false,12300)));*/
 		TemplateStyle temp=(TemplateStyle)context.getBean("templateStyle");
 		//System.out.println(temp.insertion(new Watch("MiWrist5","Android",false,true,7899)));;
-		System.out.println("No of Watches: "+temp.stocks());
+		/*System.out.println("No of Watches: "+temp.stocks());
 		System.out.println("Price is: "+temp.getPrice("MiWrist5"));
-		System.out.println("Model is: "+temp.getModel(1));
+		System.out.println("Model is: "+temp.getModel(1));*/
+		//System.out.println(temp.getOne(1));
+		System.out.println(temp.getAll());
 	}
 }

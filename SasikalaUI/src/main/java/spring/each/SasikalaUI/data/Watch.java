@@ -8,7 +8,7 @@ public class Watch
 	@Override
 	public String toString() {
 		return "Watch [model=" + model + ", os=" + os + ", isWifi=" + isWifi + ", isBluetooth=" + isBluetooth
-				+ ", watchId=" + watchId + ", price=" + price + "]";
+				+ ", watchId=" + watchId + ", price=" + price + "]\n";
 	}
 	public Watch() {
 		super();
