@@ -14,16 +14,23 @@ http://www.springframework.org/schema/mvc/spring-mvc.xsd">
 
 <mvc:annotation-driven/>
 
-<context:component-scan base-package="InitialStage"/> 
-<!-- <bean name="handlerMapping" class="org.springframework.web.servlet.handler.BeanNameUrlHandlerMapping"/>
-<bean name="handlerAdapter" class="org.springframework.web.servlet.HandlerAdapter"/>
+<context:component-scan base-package="forms.model.demo"/> 
+<bean class="org.springframework.web.servlet.view.InternalResourceViewResolver">  
+        <property name="prefix" value="/WEB-INF/formmodel/" />
+        <property name="suffix" value=".jsp" />
+</bean>
 
-<bean name="/first" id="/first" class="InitialStage.Beginning"/>
- -->
+<!-- <context:component-scan base-package="forms.simple"/> 
+<bean class="org.springframework.web.servlet.view.InternalResourceViewResolver">  
+        <property name="prefix" value="/WEB-INF/formdata/" />
+        <property name="suffix" value=".jsp" />
+</bean> -->
+
+<!-- <context:component-scan base-package="InitialStage"/> 
 <bean class="org.springframework.web.servlet.view.InternalResourceViewResolver">  
         <property name="prefix" value="/WEB-INF/one/" />
         <property name="suffix" value=".jsp" />
-</bean>
+</bean> -->
 
     
 </beans>
