@@ -12,7 +12,7 @@ public class MilageEditor extends PropertyEditorSupport
 		if(text.equals("")||text.equals(" ")||text==null)
 		{
 			text=""+40;
-			setValue(text);
 		}
+		setValue(text);
 	}
 }

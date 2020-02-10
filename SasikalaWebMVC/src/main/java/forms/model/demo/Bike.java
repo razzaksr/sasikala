@@ -2,13 +2,26 @@ package forms.model.demo;
 
 import java.util.Date;
 
+import javax.validation.constraints.Max;
+import javax.validation.constraints.Min;
+import javax.validation.constraints.Past;
+import javax.validation.constraints.Pattern;
+import javax.validation.constraints.Size;
+
 import org.springframework.stereotype.Component;
 
 @Component
 public class Bike 
 {
-	private Integer bid,milage,price;
+	private Integer bid;
+	@Max(50)
+	@Min(20)
+	private int milage;
+	private Integer price;
+	@Pattern(regexp="[^0-9]*")
+	@Size(max=15,min=4)
 	private String model;
+	@Past
 	private Date manufactured;
 	public Bike() {
 		super();
@@ -43,10 +56,10 @@ public class Bike
 	public void setBid(int bid) {
 		this.bid = bid;
 	}
-	public Integer getMilage() {
+	public int getMilage() {
 		return milage;
 	}
-	public void setMilage(Integer milage) {
+	public void setMilage(int milage) {
 		this.milage = milage;
 	}
 	public int getPrice() {
