@@ -16,7 +16,7 @@ public class Bike
 	private Integer bid;
 	@Max(50)
 	@Min(20)
-	private int milage;
+	private Integer milage;
 	private Integer price;
 	@Pattern(regexp="[^0-9]*")
 	@Size(max=15,min=4)
@@ -50,10 +50,10 @@ public class Bike
 				+ manufactured + "]";
 	}
 
-	public int getBid() {
+	public Integer getBid() {
 		return bid;
 	}
-	public void setBid(int bid) {
+	public void setBid(Integer bid) {
 		this.bid = bid;
 	}
 	public int getMilage() {
@@ -62,7 +62,7 @@ public class Bike
 	public void setMilage(int milage) {
 		this.milage = milage;
 	}
-	public int getPrice() {
+	public Integer getPrice() {
 		return price;
 	}
 	public void setPrice(int price) {

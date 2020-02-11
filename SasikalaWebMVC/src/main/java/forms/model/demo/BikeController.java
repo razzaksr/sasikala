@@ -2,6 +2,7 @@ package forms.model.demo;
 
 import java.text.SimpleDateFormat;
 import java.util.Date;
+import java.util.InputMismatchException;
 
 import javax.sql.DataSource;
 import javax.validation.Valid;
@@ -39,6 +40,12 @@ public class BikeController
 	@RequestMapping(value="/insert", method=RequestMethod.POST)
 	public ModelAndView dosome(@Valid @ModelAttribute("bike") Bike bike,BindingResult res)
 	{
+		if(bike.getBid()==null)
+		{throw new NumberFormatException();}
+		else if(bike.getModel().length()<=4)
+		{throw new InputMismatchException();}
+		else if(bike.getPrice()>120000)
+		{throw new SasikalaException();}
 		if(res.hasErrors()) {return new ModelAndView("addStock");}
 		ModelAndView mod=new ModelAndView("enrolled");
 		jdbc.update("insert into bike(bid,model,milage,price) values(?,?,?,?)",new Object[] {bike.getBid(),bike.getModel(),bike.getMilage(),bike.getPrice()});
