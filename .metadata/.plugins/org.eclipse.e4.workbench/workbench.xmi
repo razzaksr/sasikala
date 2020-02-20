@@ -3,7 +3,7 @@
   <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xD;&#xA;&lt;workbench>&#xD;&#xA;&lt;mruList>&#xD;&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.eclipse.jdt.ui.CompilationUnitEditor&quot; name=&quot;Bike.java&quot; tooltip=&quot;Hibernate1/src/main/java/basic/dayone/Bike.java&quot;>&#xD;&#xA;&lt;persistable path=&quot;/Hibernate1/src/main/java/basic/dayone/Bike.java&quot;/>&#xD;&#xA;&lt;/file>&#xD;&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.eclipse.jdt.ui.CompilationUnitEditor&quot; name=&quot;Hibernate1Application.java&quot; tooltip=&quot;Hibernate1/src/main/java/basic/dayone/Hibernate1Application.java&quot;>&#xD;&#xA;&lt;persistable path=&quot;/Hibernate1/src/main/java/basic/dayone/Hibernate1Application.java&quot;/>&#xD;&#xA;&lt;/file>&#xD;&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;SpringBootPropertyEditor&quot; name=&quot;application.properties&quot; tooltip=&quot;Hibernate1/src/main/resources/application.properties&quot;>&#xD;&#xA;&lt;persistable path=&quot;/Hibernate1/src/main/resources/application.properties&quot;/>&#xD;&#xA;&lt;/file>&#xD;&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.eclipse.jdt.ui.CompilationUnitEditor&quot; name=&quot;Manage.java&quot; tooltip=&quot;Hibernate1/src/main/java/basic/dayone/Manage.java&quot;>&#xD;&#xA;&lt;persistable path=&quot;/Hibernate1/src/main/java/basic/dayone/Manage.java&quot;/>&#xD;&#xA;&lt;/file>&#xD;&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.eclipse.wst.xml.ui.internal.tabletree.XMLMultiPageEditorPart&quot; name=&quot;hibernate.cfg.xml&quot; tooltip=&quot;Hibernate1/src/main/resources/hibernate.cfg.xml&quot;>&#xD;&#xA;&lt;persistable path=&quot;/Hibernate1/src/main/resources/hibernate.cfg.xml&quot;/>&#xD;&#xA;&lt;/file>&#xD;&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.eclipse.m2e.editor.MavenPomEditor&quot; name=&quot;pom.xml&quot; tooltip=&quot;Hibernate1/pom.xml&quot;>&#xD;&#xA;&lt;persistable path=&quot;/Hibernate1/pom.xml&quot;/>&#xD;&#xA;&lt;/file>&#xD;&#xA;&lt;/mruList>&#xD;&#xA;&lt;/workbench>"/>
   <tags>ModelMigrationProcessor.001</tags>
   <tags>activeSchemeId:org.eclipse.ui.defaultAcceleratorConfiguration</tags>
-  <children xsi:type="basic:TrimmedWindow" xmi:id="_CPktQg0aEeqkm-Pz1c6ayg" elementId="IDEWindow" contributorURI="platform:/plugin/org.eclipse.platform" selectedElement="_JAj44g0aEeqkm-Pz1c6ayg" label="%trimmedwindow.label.eclipseSDK" x="52" y="52" width="1024" height="768">
+  <children xsi:type="basic:TrimmedWindow" xmi:id="_CPktQg0aEeqkm-Pz1c6ayg" elementId="IDEWindow" contributorURI="platform:/plugin/org.eclipse.platform" selectedElement="_JAj44g0aEeqkm-Pz1c6ayg" label="%trimmedwindow.label.eclipseSDK" x="0" y="0" width="1024" height="768">
     <persistedState key="coolBarVisible" value="true"/>
     <persistedState key="perspectiveBarVisible" value="true"/>
     <persistedState key="isRestored" value="true"/>
@@ -420,7 +420,7 @@
       </children>
       <children xsi:type="menu:ToolBar" xmi:id="_JG0R4A0aEeqkm-Pz1c6ayg" elementId="org.eclipse.ui.workbench.file">
         <tags>Draggable</tags>
-        <children xsi:type="menu:HandledToolItem" xmi:id="_JHHz5g0aEeqkm-Pz1c6ayg" elementId="print" visible="false" iconURI="platform:/plugin/org.eclipse.ui/icons/full/etool16/print_edit.png" tooltip="Print" enabled="false" command="_CV-RcQ0aEeqkm-Pz1c6ayg"/>
+        <children xsi:type="menu:HandledToolItem" xmi:id="_pSOlAFIcEeqLXJLl33Vfdw" elementId="print" visible="false" iconURI="platform:/plugin/org.eclipse.ui/icons/full/etool16/print_edit.png" tooltip="Print" command="_CV-RcQ0aEeqkm-Pz1c6ayg"/>
       </children>
       <children xsi:type="menu:ToolBar" xmi:id="_JG0R4Q0aEeqkm-Pz1c6ayg" elementId="group.edit" toBeRendered="false">
         <tags>toolbarSeparator</tags>
@@ -451,7 +451,7 @@
       </children>
       <children xsi:type="menu:ToolBar" xmi:id="_JG0R6A0aEeqkm-Pz1c6ayg" elementId="org.eclipse.ui.workbench.navigate">
         <tags>Draggable</tags>
-        <children xsi:type="menu:HandledToolItem" xmi:id="_JHHz8w0aEeqkm-Pz1c6ayg" elementId="org.eclipse.ui.window.pinEditor" visible="false" iconURI="platform:/plugin/org.eclipse.ui/icons/full/etool16/pin_editor.png" tooltip="Pin Editor" type="Check" command="_CV-RFw0aEeqkm-Pz1c6ayg"/>
+        <children xsi:type="menu:HandledToolItem" xmi:id="_pSpbxFIcEeqLXJLl33Vfdw" elementId="org.eclipse.ui.window.pinEditor" visible="false" iconURI="platform:/plugin/org.eclipse.ui/icons/full/etool16/pin_editor.png" tooltip="Pin Editor" type="Check" command="_CV-RFw0aEeqkm-Pz1c6ayg"/>
       </children>
       <children xsi:type="menu:ToolBar" xmi:id="_KE0LMA0aEeqkm-Pz1c6ayg" elementId="com.genuitec.eclipse.code.css" visible="false">
         <tags>Draggable</tags>
@@ -822,9 +822,6 @@
     </bindings>
     <bindings xmi:id="_CXxAEw0aEeqkm-Pz1c6ayg" keySequence="ALT+SHIFT+Q Z" command="_CV-Qyw0aEeqkm-Pz1c6ayg">
       <parameters xmi:id="_CXxAFA0aEeqkm-Pz1c6ayg" elementId="org.eclipse.ui.views.showView.viewId" name="org.eclipse.ui.views.showView.viewId" value="org.eclipse.team.ui.GenericHistoryView"/>
-    </bindings>
-    <bindings xmi:id="_CXxAGQ0aEeqkm-Pz1c6ayg" keySequence="CTRL+P" command="_CV-RcQ0aEeqkm-Pz1c6ayg">
-      <tags>deleted</tags>
     </bindings>
     <bindings xmi:id="_CXxAGg0aEeqkm-Pz1c6ayg" keySequence="CTRL+Q" command="_CV-Rgw0aEeqkm-Pz1c6ayg"/>
     <bindings xmi:id="_CXxAIw0aEeqkm-Pz1c6ayg" keySequence="CTRL+S" command="_CV1Htw0aEeqkm-Pz1c6ayg"/>
@@ -3060,7 +3057,7 @@
   <addons xmi:id="_CPktVw0aEeqkm-Pz1c6ayg" elementId="MinMax Addon" contributorURI="platform:/plugin/org.eclipse.platform" contributionURI="bundleclass://org.eclipse.e4.ui.workbench.addons.swt/org.eclipse.e4.ui.workbench.addons.minmax.MinMaxAddon"/>
   <addons xmi:id="_CPktWA0aEeqkm-Pz1c6ayg" elementId="org.eclipse.ui.workbench.addon.0" contributorURI="platform:/plugin/org.eclipse.platform" contributionURI="bundleclass://org.eclipse.e4.ui.workbench/org.eclipse.e4.ui.internal.workbench.addons.HandlerProcessingAddon"/>
   <addons xmi:id="_CQUUIA0aEeqkm-Pz1c6ayg" elementId="SplitterAddon" contributionURI="bundleclass://org.eclipse.e4.ui.workbench.addons.swt/org.eclipse.e4.ui.workbench.addons.splitteraddon.SplitterAddon"/>
-  <addons xmi:id="_IYS0IKimEeS11vbz3f9ezw" elementId="org.eclipse.ui.ide.addon.0" contributorURI="platform:/plugin/org.eclipse.ui.ide" contributionURI="bundleclass://org.eclipse.ui.ide/org.eclipse.ui.internal.ide.addons.SaveAllDirtyPartsAddon"/>
+  <addons xmi:id="_oajWIVIcEeqLXJLl33Vfdw" elementId="org.eclipse.ui.ide.addon.0" contributionURI="bundleclass://org.eclipse.ui.ide/org.eclipse.ui.internal.ide.addons.SaveAllDirtyPartsAddon"/>
   <addons xmi:id="_dz0JgGOlEeSMMaPQU2nlzw" elementId="org.eclipse.ui.ide.application.addon.0" contributorURI="platform:/plugin/org.eclipse.ui.ide.application" contributionURI="bundleclass://org.eclipse.ui.ide.application/org.eclipse.ui.internal.ide.application.addons.ModelCleanupAddon"/>
   <categories xmi:id="_CVrVQA0aEeqkm-Pz1c6ayg" elementId="org.eclipse.team.ui.category.team" name="Team" description="Actions that apply when working with a Team"/>
   <categories xmi:id="_CVrVQQ0aEeqkm-Pz1c6ayg" elementId="org.eclipse.ui.category.views" name="Views" description="Commands for opening views"/>

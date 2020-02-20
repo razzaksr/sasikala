@@ -2,6 +2,7 @@ codemix.cleanup.bindings=true
 codemix.day1.message.displayed.time=1574421719101
 codemix.fixed.editors=true
 codemix.livechat.feedback=1576322473046
+codemix.livechat.feedback.displayed=true
 codemix.showed.view=true
 codemix.showed.welcome=true
 devstyle.breadcrumb.turned.off=true
