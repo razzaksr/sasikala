@@ -7,7 +7,9 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.validation.BindingResult;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.PutMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.servlet.ModelAndView;
@@ -44,5 +46,29 @@ public class RetailController
 	{
 		List<Speaker> hey=retail.findAll();
 		return new ModelAndView("stocks").addObject("got", hey);
+	}
+	@GetMapping("/edit")
+	public ModelAndView six(@RequestParam("id") int id)
+	{
+		Speaker temp=retail.findById(id).orElse(new Speaker());
+		return new ModelAndView("found").addObject("one", temp);
+	}
+	@PostMapping("/update")
+	public ModelAndView seven(Speaker speaker)
+	{
+		retail.save(speaker);
+		return new ModelAndView("found").addObject("one", speaker);
+	}
+	@GetMapping("/delete")
+	public void eight(@RequestParam("id") int id)
+	{
+		Speaker temp=retail.findById(id).orElse(new Speaker());
+		retail.delete(temp);
+	}
+	@GetMapping("/byName/{which}")
+	public ModelAndView nine(@PathVariable("which") String which)
+	{
+		List<Speaker> temp=retail.findByName(which);
+		return new ModelAndView("stocks").addObject("got", temp);
 	}
 }
